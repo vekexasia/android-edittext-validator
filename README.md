@@ -1,10 +1,9 @@
-Android Form EditText
-=====================
+# Android Form EditText
 
 Android form edit text is an extension of EditText that brings data validation facilities to the edittext.
 
-How to use
-==========
+# How to use
+
 
 In your xml import an extra namespace on the root of your layout
 
@@ -61,7 +60,7 @@ You can customize them using the attributes
 - **testErrorString** used when the field does not pass the test
 - **emptyErrorString** used when the field is empty
 
-**Example:**
+### Example:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -93,7 +92,7 @@ Just use the **emptyAllowed** attribute and set it to *true*. **Note:** If you d
 
 If you want to use **regexp** as **test** attribute value you'll need to also use the **customRegexp** attribute. Take a look in the following example:
 
-**Example: (Email check)**
+### Example: (Email check)
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -147,7 +146,7 @@ Furthermore *testValidity()* will also place an exclamation mark on the right of
 
 
 
-==Add your custom validators==
+## Add your custom validators
 You can add your custom validators runtime through the *addValidator* method. For example, let's suppouse we want to add a validator that checks that the text input is equal to the string "ciao":
 ```java
 public class CiaoValidator extends Validator {
@@ -168,9 +167,6 @@ As you can see in the constructor you'll be required to set an Error Message tha
 This means that if the user will not enter "ciao" in the edit text it will get that error message in the popup.
 
 
-
-
-
-=Author=
+# Author
 
 *  Andrea Baccega <me@andreabaccega.com> - _Author/Ideator of the library_
