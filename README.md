@@ -20,7 +20,7 @@ In your xml import an extra namespace on the root of your layout
 </LinearLayout>
 ```
 
-** Note: ** It's not mandatory to use it on the root element. Also remember to change the xmlns value with your package name
+**Note:** It's not mandatory to use it on the root element. Also remember to change the xmlns value with your package name
 
 Whenever you need to use the FormEditText just do the following in your xml.
 
@@ -87,6 +87,40 @@ You can customize them using the attributes
 </LinearLayout>
 ```
 
+
+Furthermore you can ask the FormEditText to allow the content to be *optional*. 
+Just use the **emptyAllowed** attribute and set it to *true*. **Note:** If you don't specify the **emptyAllowed** attribute the default value is *false*.
+
+If you want to use **regexp** as **test** attribute value you'll need to also use the **customRegexp** attribute. Take a look in the following example:
+
+**Example: (Email check)**
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:whatever="http://schemas.android.com/apk/res/your.package.name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- Some stuff -->
+
+	<com.andreabaccega.widget.FormEditText
+           style="@android:style/Widget.EditText"
+           whatever:test="regexp"
+           whatever:customRegexp="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"
+           whatever:testErrorString="@string/error_emailnotvalid"
+           android:id="@+id/et_email"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="@string/hint_email"
+           android:inputType="textEmailAddress"
+           />    
+
+    <!-- Some other stuff -->
+
+</LinearLayout>
+```
+
 In your Java code you'll need to call a method when you want to know if the field validates.
 
 ```java
@@ -107,13 +141,36 @@ In your Java code you'll need to call a method when you want to know if the fiel
 	}
 ```
 
-Calling *testValidity()* will cause the EditText to:
-1. Check if the field is empty,
-2. Check if the field passes the tests
+Calling *testValidity()* will cause the EditText to cycle through all the validators and call the isValid method. it will stop when one of them returns false or there are no validators left.
 
-It returns true if both steps are passed.
-Furthermore *testValidity()* will also place an exclamation mark on the right of the  [EditText](http://developer.android.com/reference/android/widget/EditText.html) and will call the [setError](http://developer.android.com/reference/android/widget/TextView.html#setError(java.lang.CharSequence)) method.
+Furthermore *testValidity()* will also place an exclamation mark on the right of the  [EditText](http://developer.android.com/reference/android/widget/EditText.html) and will call the [setError](http://developer.android.com/reference/android/widget/TextView.html#setError) method.
 
-Author
-=======
+
+
+==Add your custom validators==
+You can add your custom validators runtime through the *addValidator* method. For example, let's suppouse we want to add a validator that checks that the text input is equal to the string "ciao":
+```java
+public class CiaoValidator extends Validator {
+
+	public CiaoValidator() {
+		super("You should enter 'ciao' here");
+	}
+
+	public boolean isValid(EditText et) {
+		return TextUtils.equals(et.getText(), "ciao");
+	}
+	
+}
+```
+
+As you can see in the constructor you'll be required to set an Error Message that will be handled ( in this simple scenario ) by the super class. That piece of code will set the error message to: *You should enter 'ciao' here*.
+
+This means that if the user will not enter "ciao" in the edit text it will get that error message in the popup.
+
+
+
+
+
+=Author=
+
 *  Andrea Baccega <me@andreabaccega.com> - _Author/Ideator of the library_
