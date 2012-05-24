@@ -34,7 +34,7 @@ public class FormEditText extends EditText {
 	/**
 	 * The custom validators setted using
 	 */
-	public List<Validator> mValidators = new ArrayList<Validator>();
+	private List<Validator> mValidators = new ArrayList<Validator>();
 	
 	/**
 	 * This should be used with {@link #addTextChangedListener(TextWatcher)}. It fixes the non-hiding error popup behaviour.
