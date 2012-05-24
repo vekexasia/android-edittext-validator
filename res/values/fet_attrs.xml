@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FormEditText">
+        <attr name="test">
+            <enum name="regexp" value="0" />
+            <enum name="numeric" value="1" />
+            <enum name="alpha" value="2" />
+            <enum name="alphanumeric" value="3" />
+            <enum name="nocheck" value="4" />
+        </attr>
+        <attr name="testErrorString" format="string" />
+        <attr name="emptyErrorString" format="string" />
+        <attr name="customRegexp" format="string" />
+        <attr name="emptyAllowed" format="boolean" />
+    </declare-styleable>
+
+</resources>
