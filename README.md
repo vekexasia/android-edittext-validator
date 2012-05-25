@@ -8,7 +8,8 @@ I built an example app that showcase some of the possibilities of the library.
 You'll be able to find the app in the [Play Store](https://play.google.com/store/apps/details?id=com.andreabaccega.edittextformexample)
 Here some screenshot of the Example app ( and the library )
 
-![Examples list](http://lh6.ggpht.com/mYceoyXym2U4-6tRJWsudY4-6-V1TyFlqDfzL9P2R4Z059WZQLTZ3C9Gqcwr-hRrDQ) ![Email validation](http://lh6.ggpht.com/yTzsI6-9VTtJVH331EA6gKc4GRBMv_DXxjAqPPlV9Yj5g-VGzcWtJ77T_m2JcbmbOoQ)
+![Examples list](http://lh6.ggpht.com/mYceoyXym2U4-6tRJWsudY4-6-V1TyFlqDfzL9P2R4Z059WZQLTZ3C9Gqcwr-hRrDQ) 
+![Email validation](http://lh6.ggpht.com/yTzsI6-9VTtJVH331EA6gKc4GRBMv_DXxjAqPPlV9Yj5g-VGzcWtJ77T_m2JcbmbOoQ)
 
 The app source code is located under this repo!
 
@@ -208,7 +209,7 @@ This means that if the user will not enter "ciao" in the edit text it will get t
 
 ## Binary operators
 You can use the following binary operators in order to perform checks on the field value:
-- **AND**: will return true if very enqueued validator returns true
+- **AND**: will return true if every enqueued validator returns true
 - **OR**: will return true if just one enqueued validator returns true
 - **NOT**: will return the inverse of the passed Validator
 
