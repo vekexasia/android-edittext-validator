@@ -51,7 +51,13 @@ There are several values you can set to the test attribute:
 - **regexp**: for custom regexp
 - **numeric**: for an only numeric field
 - **alpha**: for an alpha only field
-- **alphanumeric**: guess what?
+- **alphaNumeric**: guess what?
+- **email**: checks that the field is a valid email
+- **creditCard**: checks that the field contains a valid credit card using [Luhn Algorithm](http://en.wikipedia.org/wiki/Luhn_algorithm)
+- **phone**: checks that the field contains a valid phone number
+- **domainName**: checks that field contains a valid domain name ( always passes the test in API Level < 8 )
+- **ipAddress**: checks that the field contains a valid ip address
+- **webUrl**: checks that the field contains a valid url ( always passes the test in API Level < 8 )
 - **nocheck**: It does not check anything except the emptyness of the field.
 
 For most of the test type values this library comes with a couple of default strings. This means that error strings ( english only ) are already available for the following test types: numeric, alpha, alphanumeric
@@ -108,6 +114,30 @@ If you want to use **regexp** as **test** attribute value you'll need to also us
            whatever:test="regexp"
            whatever:customRegexp="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"
            whatever:testErrorString="@string/error_emailnotvalid"
+           android:id="@+id/et_email"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="@string/hint_email"
+           android:inputType="textEmailAddress"
+           />    
+
+    <!-- Some other stuff -->
+
+</LinearLayout>
+```
+**Note:** The library supports the email check natively using the **email** value as the **test** attribute.
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:whatever="http://schemas.android.com/apk/res/your.package.name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- Some stuff -->
+
+	<com.andreabaccega.widget.FormEditText
+           style="@android:style/Widget.EditText"
+           whatever:test="email"
            android:id="@+id/et_email"
            android:layout_width="match_parent"
            android:layout_height="wrap_content"

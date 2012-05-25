@@ -6,8 +6,14 @@
             <enum name="regexp" value="0" />
             <enum name="numeric" value="1" />
             <enum name="alpha" value="2" />
-            <enum name="alphanumeric" value="3" />
-            <enum name="nocheck" value="4" />
+            <enum name="alphaNumeric" value="3" />
+            <enum name="email" value="4"/>
+            <enum name="creditCard" value="5"/>
+            <enum name="phone" value="6"/>
+            <enum name="domainName" value="7"/>
+            <enum name="ipAddress" value="8"/>
+            <enum name="webUrl" value="9"/>
+            <enum name="nocheck" value="10"/>
         </attr>
         <attr name="testErrorString" format="string" />
         <attr name="emptyErrorString" format="string" />

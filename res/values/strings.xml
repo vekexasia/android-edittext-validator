@@ -4,6 +4,10 @@
 	<string name="error_this_field_cannot_contain_special_character">This field cannot contain any special character</string>
 	<string name="error_only_standard_letters_are_allowed">Only standard letters are allowed</string>
 	<string name="error_field_must_not_be_empty">The field must not be empty</string>
-    
-
+    <string name="error_email_address_not_valid">Email address not valid</string>
+    <string name="error_creditcard_number_not_valid">Credit card number is not valid</string>
+    <string name="error_phone_not_valid">Phone number not valid</string>
+    <string name="error_domain_not_valid">Domain name not valid</string>
+	<string name="error_ip_not_valid">IP Address not valid</string>
+	<string name="error_url_not_valid">Web Url is not valid</string>
 </resources>

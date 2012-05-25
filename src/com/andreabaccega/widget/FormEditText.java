@@ -6,11 +6,17 @@ import java.util.regex.Pattern;
 import com.andreabaccega.formedittext.R;
 import com.andreabaccega.formedittextvalidator.AlphaNumericValidator;
 import com.andreabaccega.formedittextvalidator.AlphaValidator;
+import com.andreabaccega.formedittextvalidator.CreditCardValidator;
+import com.andreabaccega.formedittextvalidator.DomainValidator;
 import com.andreabaccega.formedittextvalidator.DummyValidator;
+import com.andreabaccega.formedittextvalidator.EmailValidator;
 import com.andreabaccega.formedittextvalidator.EmptyValidator;
+import com.andreabaccega.formedittextvalidator.IpAddressValidator;
 import com.andreabaccega.formedittextvalidator.NumericValidator;
+import com.andreabaccega.formedittextvalidator.PhoneValidator;
 import com.andreabaccega.formedittextvalidator.RegexpValidator;
 import com.andreabaccega.formedittextvalidator.Validator;
+import com.andreabaccega.formedittextvalidator.WebUrlValidator;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -30,11 +36,19 @@ public class FormEditText extends EditText {
 	private static final int TEST_NUMERIC		= 1;
 	private static final int TEST_ALPHA			= 2;
 	private static final int TEST_ALPHANUMERIC	= 3;
-	private static final int TEST_NOCHECK		= 4;
+	private static final int TEST_EMAIL			= 4;
+	private static final int TEST_CREDITCARD	= 5;
+	private static final int TEST_PHONE			= 6;
+	private static final int TEST_DOMAINNAME	= 7;
+	private static final int TEST_IPADDRESS		= 8;
+	private static final int TEST_WEBURL		= 9;
+	
+	private static final int TEST_NOCHECK		= 10;
 	/**
 	 * The custom validators setted using
 	 */
 	private List<Validator> mValidators = new ArrayList<Validator>();
+	private String errorStringFromXML;
 	
 	/**
 	 * This should be used with {@link #addTextChangedListener(TextWatcher)}. It fixes the non-hiding error popup behaviour.
@@ -51,9 +65,15 @@ public class FormEditText extends EditText {
 		public void afterTextChanged(Editable s) {}
 	};
 	
+	
 	public FormEditText(Context context, AttributeSet attrs) {
 		this(context, attrs, 0);
 	}
+	
+	public String getCustomErrorString() {
+		return errorStringFromXML;
+	}
+	
 	public FormEditText(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
 		
@@ -73,20 +93,22 @@ public class FormEditText extends EditText {
 		
 		int testType = typedArray.getInt(R.styleable.FormEditText_test, TEST_NOCHECK);
 		
-		String errorStringFromXML = typedArray.getString(R.styleable.FormEditText_testErrorString);
+		errorStringFromXML = typedArray.getString(R.styleable.FormEditText_testErrorString);
 		
 		
 		switch (testType) {
+		default:
+		case TEST_NOCHECK:
+			addValidator(new DummyValidator());
+			break;
+			
 		case TEST_ALPHA:
 			addValidator(new AlphaValidator(TextUtils.isEmpty(errorStringFromXML)?context.getString(R.string.error_only_standard_letters_are_allowed):errorStringFromXML));
 			break;
 		case TEST_ALPHANUMERIC:
 			addValidator(new AlphaNumericValidator(TextUtils.isEmpty(errorStringFromXML)?context.getString(R.string.error_this_field_cannot_contain_special_character):errorStringFromXML));
 			break;
-		default:
-		case TEST_NOCHECK:
-			addValidator(new DummyValidator());
-			break;
+		
 		case TEST_NUMERIC:
 			addValidator(new NumericValidator(TextUtils.isEmpty(errorStringFromXML)?context.getString(R.string.error_only_numeric_digits_allowed):errorStringFromXML));
 			break;
@@ -94,7 +116,26 @@ public class FormEditText extends EditText {
 			String customRegexp = typedArray.getString(R.styleable.FormEditText_customRegexp);
 			addValidator(new RegexpValidator(errorStringFromXML, customRegexp));
 			break;
+		case TEST_CREDITCARD:
+			addValidator(new CreditCardValidator(TextUtils.isEmpty(errorStringFromXML)?context.getString(R.string.error_creditcard_number_not_valid):errorStringFromXML));
+			break;
+		case TEST_EMAIL:
+			addValidator(new EmailValidator(TextUtils.isEmpty(errorStringFromXML)?context.getString(R.string.error_email_address_not_valid):errorStringFromXML));
+			break;
+		case TEST_PHONE:
+			addValidator(new PhoneValidator(TextUtils.isEmpty(errorStringFromXML)?context.getString(R.string.error_phone_not_valid):errorStringFromXML));
+			break;
+		case TEST_DOMAINNAME:
+			addValidator(new DomainValidator(TextUtils.isEmpty(errorStringFromXML)?context.getString(R.string.error_domain_not_valid):errorStringFromXML));
+			break;
+		case TEST_IPADDRESS:
+			addValidator(new IpAddressValidator(TextUtils.isEmpty(errorStringFromXML)?context.getString(R.string.error_ip_not_valid):errorStringFromXML));
+			break;
+		case TEST_WEBURL:
+			addValidator(new WebUrlValidator(TextUtils.isEmpty(errorStringFromXML)?context.getString(R.string.error_url_not_valid):errorStringFromXML));
+			break;
 		}
+		
 		
 		typedArray.recycle();
 		
