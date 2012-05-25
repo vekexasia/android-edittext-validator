@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FormEditText Example</string>
+    <string name="validate_">Validate!</string>
+    <string name="explanation_numeric">The numeric field allows only numbers on it. The previous edittext was intentionally configured to accept any kind of input so that you can test the validation.</string>
+    <string name="explanation_alpha">The alpha field will check if the field contains only standard letters.</string>
+    <string name="hint_email">me@andreabaccega.com</string>
+    <string name="explanation_email">The email field will only accept valid email input.\nNote that this will only perform a regular expression check</string>
+    
+    <string name="hint_creditcard">444433332222111</string>
+    <string name="explanation_creditcard">The credit card field will only accept valid credit card numbers. The validation is performed through the Luhn Algorithm</string>
+    
+    <string name="hint_phone">+41 01 12345678</string>
+    <string name="explanation_phone">The phone number will be validated using regexps It will allow several formats.\n\t- +00 01 23456799\n\t- 0123456789</string>
+    
+    <string name="hint_domainname">andreabaccega.com</string>
+    <string name="explanation_domainname">The domainname check will be performed using regexps.</string>
+    
+    <string name="hint_ipaddress">127.0.0.1</string>
+    <string name="explanation_ipaddress">The ip address check will be performed using regexps.</string>
+    
+    <string name="hint_weburl">http://www.andreabaccega.com/blog/</string>
+    <string name="explanation_weburl">The check will be performed using regexps only.</string>
+    
+    <string name="hint_nocheck">&#8230;</string>
+    <string name="explanation_nocheck">the nocheck test will always pass the test ( useful only if you want to check that the field is not empty)</string>
+    
+    <string name="explanation_phone_custommmessages">This is a regular phone check ( like the previous one ).\nThe only difference is that here we\'ve a custom message for the empty case and the invalid case. Try it out!</string>
+    <string name="custom_test_error_phone">Custom test error message!</string>
+    <string name="custom_empty_error_phone">Custom empty error message!</string>
+    
+    <string name="explanation_allow_empty">This fields validates a phone when the user enters something. If the user doesn\'t enter any data the EditText will validate!</string>
+    
+    <string name="hint_regexp">aa</string>
+    <string name="custom_error_regexp">This field only validates with 2 or more "a"</string>
+    <string name="explanation_regexp">The field validates only if the field content matches the regexp given in the xml. The current regexp is: /^[a]{2,}$/\nNote that the regexp is case sensitive so that the field won\'t validate if you enter "AA"</string>
+    
+    <string name="hint_programmatic">ciao</string>
+    <string name="explanation_programatic">The current check is performed by a programmatically added validator. Check out the source code.</string>
+    <string name="programmatic_title">Programmatically added validator</string>
+    
+    <string name="emailorcredit_title">Email OR Credit</string>
+    <string name="hint_emailorcredit">your email or creditcard number</string>
+    <string name="explanation_emailorcredit">The previous field will validate only if it is not empty and one of the following is true:\n- it is a valid email address.\n- it is a valid credit card</string>
+</resources>

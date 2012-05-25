@@ -1,0 +1,12 @@
+<com.andreabaccega.widget.FormEditText
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:editTextFormExample="http://schemas.android.com/apk/res/com.andreabaccega.edittextformexample"
+    android:id="@+id/et"
+    style="@android:style/Widget.EditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    
+    android:hint="@string/hint_email"
+    android:inputType="textEmailAddress"
+    
+    editTextFormExample:testType="email" /> 

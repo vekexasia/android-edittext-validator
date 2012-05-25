@@ -34,7 +34,7 @@ Whenever you need to use the FormEditText just do the following in your xml.
 
 	<com.andreabaccega.widget.FormEditText
            style="@android:style/Widget.EditText"
-           whatever:test="alpha"
+           whatever:testType="alpha"
            android:id="@+id/et_firstname"
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
@@ -79,7 +79,7 @@ You can customize them using the attributes
 
 	<com.andreabaccega.widget.FormEditText
            style="@android:style/Widget.EditText"
-           whatever:test="alpha"
+           whatever:testType="alpha"
            whatever:emptyErrorString="@string/your_name_cannot_be_empty"
            whatever:testErrorString="@string/your_name_is_ugly"
            android:id="@+id/et_firstname"
@@ -111,7 +111,7 @@ If you want to use **regexp** as **test** attribute value you'll need to also us
 
 	<com.andreabaccega.widget.FormEditText
            style="@android:style/Widget.EditText"
-           whatever:test="regexp"
+           whatever:testType="regexp"
            whatever:customRegexp="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"
            whatever:testErrorString="@string/error_emailnotvalid"
            android:id="@+id/et_email"
@@ -137,7 +137,7 @@ If you want to use **regexp** as **test** attribute value you'll need to also us
 
 	<com.andreabaccega.widget.FormEditText
            style="@android:style/Widget.EditText"
-           whatever:test="email"
+           whatever:testType="email"
            android:id="@+id/et_email"
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
@@ -196,6 +196,28 @@ As you can see in the constructor you'll be required to set an Error Message tha
 
 This means that if the user will not enter "ciao" in the edit text it will get that error message in the popup.
 
+## Binary operators
+You can use the following binary operators in order to perform checks on the field value:
+- **AND**: will return true if very enqueued validator returns true
+- **OR**: will return true if just one enqueued validator returns true
+- **NOT**: will return the inverse of the passed Validator
+
+With these binary operator validators you'll be able to perform as many different checks as you want. For example, lets say you want a field to be valid either if the user enters his email address or his credit card. Use 'nocheck' in the xml and programmatically do something like this:
+
+```java
+  protected void onCreate(Bundle savedInstanceState) {
+    // Blabla
+
+    FormEditText fdt = (FormEditText) findViewById(R.id.et);
+    fdt.addValidator(
+        new OrValidator(
+            "This is neither a creditcard or an email", 
+            new CreditCardValidator(null), // we specify null as the message string cause the Or validator will use his own message  
+            new EmailValidator(null) // same here for null
+            )
+        );
+  }
+```
 
 # Author
 

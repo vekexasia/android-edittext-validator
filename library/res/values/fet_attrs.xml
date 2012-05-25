@@ -2,7 +2,7 @@
 <resources>
 
     <declare-styleable name="FormEditText">
-        <attr name="test">
+        <attr name="testType">
             <enum name="regexp" value="0" />
             <enum name="numeric" value="1" />
             <enum name="alpha" value="2" />
