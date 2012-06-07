@@ -43,7 +43,6 @@ Whenever you need to use the FormEditText just do the following in your xml.
     <!-- Some stuff -->
 
 	<com.andreabaccega.widget.FormEditText
-           style="@android:style/Widget.EditText"
            whatever:testType="alpha"
            android:id="@+id/et_firstname"
            android:layout_width="match_parent"
@@ -88,7 +87,6 @@ You can customize them using the attributes
     <!-- Some stuff -->
 
 	<com.andreabaccega.widget.FormEditText
-           style="@android:style/Widget.EditText"
            whatever:testType="alpha"
            whatever:emptyErrorString="@string/your_name_cannot_be_empty"
            whatever:testErrorString="@string/your_name_is_ugly"
@@ -120,7 +118,6 @@ If you want to use **regexp** as **test** attribute value you'll need to also us
     <!-- Some stuff -->
 
 	<com.andreabaccega.widget.FormEditText
-           style="@android:style/Widget.EditText"
            whatever:testType="regexp"
            whatever:customRegexp="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"
            whatever:testErrorString="@string/error_emailnotvalid"
@@ -146,7 +143,6 @@ If you want to use **regexp** as **test** attribute value you'll need to also us
     <!-- Some stuff -->
 
 	<com.andreabaccega.widget.FormEditText
-           style="@android:style/Widget.EditText"
            whatever:testType="email"
            android:id="@+id/et_email"
            android:layout_width="match_parent"

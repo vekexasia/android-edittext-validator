@@ -3,15 +3,12 @@ package com.andreabaccega.edittextformexample;
 import com.andreabaccega.formedittextvalidator.CreditCardValidator;
 import com.andreabaccega.formedittextvalidator.EmailValidator;
 import com.andreabaccega.formedittextvalidator.OrValidator;
-import com.andreabaccega.formedittextvalidator.Validator;
 import com.andreabaccega.widget.FormEditText;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -45,19 +42,6 @@ public class EmailOrCreditCard extends Activity {
             )
         );
   }
-  
-  public static class CiaoValidator extends Validator {
-
-    public CiaoValidator() {
-        super("You should enter 'ciao' here");
-    }
-
-    @Override
-    public boolean isValid(EditText et) {
-        return TextUtils.equals(et.getText(), "ciao");
-    }
-
-}
   
   public void onClickValidate(View v) {
     FormEditText fdt = (FormEditText) findViewById(R.id.et);
