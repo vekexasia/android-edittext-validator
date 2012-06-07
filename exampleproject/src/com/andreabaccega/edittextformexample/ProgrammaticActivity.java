@@ -4,8 +4,6 @@ import com.andreabaccega.formedittextvalidator.Validator;
 import com.andreabaccega.widget.FormEditText;
 
 import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -20,6 +18,7 @@ public class ProgrammaticActivity extends Activity {
   private TextView tvExplanation;
   private TextView tvTitle;
 
+  @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.layout_examplegeneric);
@@ -41,6 +40,7 @@ public class ProgrammaticActivity extends Activity {
         super("You should enter 'ciao' here");
     }
 
+    @Override
     public boolean isValid(EditText et) {
         return TextUtils.equals(et.getText(), "ciao");
     }

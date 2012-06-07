@@ -1,7 +1,4 @@
 package com.andreabaccega.widget;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.regex.Pattern;
 
 import com.andreabaccega.formedittext.R;
 import com.andreabaccega.formedittextvalidator.AlphaNumericValidator;
@@ -80,7 +77,7 @@ public class FormEditText extends EditText {
   }
 
   public FormEditText(Context context, AttributeSet attrs, int defStyle) {
-    super(context, attrs, defStyle);
+    super(context, attrs);
 
     TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.FormEditText);
     emptyAllowed = typedArray.getBoolean(R.styleable.FormEditText_emptyAllowed, false);

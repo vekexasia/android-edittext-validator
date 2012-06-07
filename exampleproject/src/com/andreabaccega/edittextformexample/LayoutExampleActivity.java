@@ -22,6 +22,7 @@ public class LayoutExampleActivity extends Activity {
   private FrameLayout flContainer;
   private TextView tvExplanation;
   private TextView tvTitle;
+  @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.layout_examplegeneric);

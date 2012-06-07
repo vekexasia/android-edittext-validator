@@ -3,7 +3,7 @@ package com.andreabaccega.formedittextvalidator;
 import android.widget.EditText;
 
 /**
- * Validator Interface. To be used with FormEditText 
+ * Validator abstract class. To be used with FormEditText 
  * @author Andrea Baccega <me@andreabaccega.com>
  *
  */

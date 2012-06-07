@@ -4,7 +4,6 @@ import com.andreabaccega.edittextformexample.utils.LayoutListItem;
 import com.andreabaccega.edittextformexample.utils.ListItem;
 import com.andreabaccega.edittextformexample.utils.SimpleListItem;
 
-import android.app.Activity;
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -13,7 +12,6 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
 
 public class EditTextFormExampleActivity extends ListActivity implements OnItemClickListener {
 

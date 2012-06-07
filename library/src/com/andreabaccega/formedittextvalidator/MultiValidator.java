@@ -4,8 +4,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import android.widget.EditText;
-
+/**
+ * Abstract class for a multivalidator.
+ * @see AndValidator
+ * @see OrValidator
+ * @author Andrea Baccega <me@andreabaccega.com>
+ *
+ */
 public abstract class MultiValidator extends Validator {
   protected final List<Validator> validators;
   public MultiValidator(String message, Validator ...validators) {

@@ -4,7 +4,12 @@ import java.util.regex.Pattern;
 
 import android.os.Build;
 import android.util.Patterns;
-
+/**
+ * It validates phone numbers.
+ * Regexp was taken from the android source code.
+ * @author Andrea Baccega <me@andreabaccega.com>
+ *
+ */
 public class PhoneValidator extends PatternValidator{
 	public PhoneValidator(String _customErrorMessage) {
 
