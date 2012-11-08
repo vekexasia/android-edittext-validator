@@ -1,8 +1,5 @@
 package com.andreabaccega.edittextformexample;
 
-import com.andreabaccega.edittextformexample.R;
-import com.andreabaccega.widget.FormEditText;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -12,6 +9,8 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.andreabaccega.widget.FormEditText;
 
 public class LayoutExampleActivity extends Activity {
   private static final String EXTRA_LAYOUT_RES = "EXTRA_LAYOUT_RES";

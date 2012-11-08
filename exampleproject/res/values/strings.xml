@@ -36,6 +36,7 @@
     <string name="explanation_regexp">The field validates only if the field content matches the regexp given in the xml. The current regexp is: /^[a]{2,}$/\nNote that the regexp is case sensitive so that the field won\'t validate if you enter "AA"</string>
     
     <string name="hint_programmatic">ciao</string>
+    <string name="error_programmatic">You should enter \'ciao\' here</string>
     <string name="explanation_programatic">The current check is performed by a programmatically added validator. Check out the source code.</string>
     <string name="programmatic_title">Programmatically added validator</string>
     

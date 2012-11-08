@@ -1,10 +1,5 @@
 package com.andreabaccega.edittextformexample;
 
-import com.andreabaccega.formedittextvalidator.CreditCardValidator;
-import com.andreabaccega.formedittextvalidator.EmailValidator;
-import com.andreabaccega.formedittextvalidator.OrValidator;
-import com.andreabaccega.widget.FormEditText;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,6 +7,11 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.andreabaccega.formedittextvalidator.CreditCardValidator;
+import com.andreabaccega.formedittextvalidator.EmailValidator;
+import com.andreabaccega.formedittextvalidator.OrValidator;
+import com.andreabaccega.widget.FormEditText;
 
 public class EmailOrCreditCard extends Activity {
   private FrameLayout flContainer;
