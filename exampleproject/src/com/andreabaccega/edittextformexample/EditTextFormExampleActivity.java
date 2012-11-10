@@ -1,8 +1,10 @@
 package com.andreabaccega.edittextformexample;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -17,7 +19,6 @@ public class EditTextFormExampleActivity
     extends ListActivity
     implements OnItemClickListener
 {
-
 	public EditTextFormExampleActivity()
 	{
 		stringItems = new String[lItems.length];
@@ -40,9 +41,30 @@ public class EditTextFormExampleActivity
 		getListView().setOnItemClickListener( this );
 	}
 
+	@Override
+	public boolean onCreateOptionsMenu( android.view.Menu menu )
+	{
+		getMenuInflater().inflate( R.menu.menu, menu );
+		return true;
+	}
+
 	public void onItemClick( AdapterView<?> av, View v, int pos, long id )
 	{
 		lItems[pos].goToDemo( this );
+	}
+
+	@Override
+	public boolean onOptionsItemSelected( MenuItem item )
+	{
+		switch ( item.getItemId() )
+		{
+			case R.id.prefs:
+				startActivity( new Intent( this, SettingsActivity.class ) );
+				return true;
+
+			default:
+				return false;
+		}
 	}
 
 	private ListItem[] lItems = new ListItem[] {

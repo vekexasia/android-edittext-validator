@@ -43,4 +43,19 @@
     <string name="emailorcredit_title">Email OR Credit</string>
     <string name="hint_emailorcredit">your email or creditcard number</string>
     <string name="explanation_emailorcredit">The previous field will validate only if it is not empty and one of the following is true:\n- it is a valid email address.\n- it is a valid credit card</string>
+    
+    <string name="full_name">Full Name</string>
+	<string name="full_name_hint">eg Fred Bloggs</string>
+	<string name="address_label">Address</string>
+	<string name="address_hint">House number, Street, Suburb, Postcode</string>
+	<string name="phone_number_label">Phone number</string>
+	<string name="phone_number_hint">Your phone number</string>
+	<string name="email_hint">email@address.com</string>
+	<string name="email_label">Email</string>
+	<string name="invalid_phoneno_message">The entered phone number is invalid</string>
+	<string name="invalid_fullname_message">Full name is invalid (must be at least 2 space separated names)</string>
+	<string name="required_phoneno_message">A contact number is required</string>
+	<string name="required_fullname_message">A full name is required</string>
+	<string name="invalid_email_message">Provided e-mail address is invalid</string>
+    
 </resources>
