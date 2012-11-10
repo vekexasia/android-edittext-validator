@@ -1,0 +1,48 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:validatingEditText="http://schemas.android.com/apk/res/com.andreabaccega.edittextformexample" >
+
+	<com.andreabaccega.widget.ValidatingEditTextPreference
+		android:capitalize="words"
+		android:ems="10"
+		android:hint="@string/full_name_hint"
+		android:inputType="textPersonName"
+		android:key="full_name"
+		android:maxLines="1"
+		android:selectAllOnFocus="true"
+		android:singleLine="true"
+		android:title="@string/full_name"
+		validatingEditText:customRegexp="(\\b.+?\\b ?){2,}"
+		validatingEditText:emptyAllowed="false"
+		validatingEditText:emptyErrorString="@string/required_fullname_message"
+		validatingEditText:testErrorString="@string/invalid_fullname_message"
+		validatingEditText:testType="regexp" />
+	<com.andreabaccega.widget.ValidatingEditTextPreference
+		android:ems="10"
+		android:hint="@string/address_hint"
+		android:inputType="textPostalAddress|textMultiLine|textAutoComplete"
+		android:key="address"
+		android:selectAllOnFocus="true"
+		android:title="@string/address_label" />
+	<com.andreabaccega.widget.ValidatingEditTextPreference
+		android:ems="10"
+		android:hint="@string/phone_number_hint"
+		android:inputType="phone"
+		android:key="phone_number"
+		android:maxLines="1"
+		android:selectAllOnFocus="true"
+		android:title="@string/phone_number_label"
+		validatingEditText:emptyAllowed="false"
+		validatingEditText:testType="phone" />
+	<com.andreabaccega.widget.ValidatingEditTextPreference
+		android:ems="10"
+		android:hint="@string/email_hint"
+		android:inputType="textEmailAddress"
+		android:key="email"
+		android:maxLines="1"
+		android:selectAllOnFocus="true"
+		android:title="@string/email_label"
+		validatingEditText:emptyAllowed="true"
+		validatingEditText:testErrorString="@string/invalid_email_message"
+		validatingEditText:testType="email" />
+
+</PreferenceScreen>

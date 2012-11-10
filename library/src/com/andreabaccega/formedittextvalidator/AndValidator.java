@@ -19,7 +19,7 @@ public class AndValidator extends MultiValidator {
   public boolean isValid(EditText et) {
     for (Validator v: validators) {
       if (! v.isValid(et)) {
-        this.errorMessage = v.getErrorMessage(et);
+        this.errorMessage = v.getErrorMessage();
         return false; // Remember :) We're acting like an || operator.
       }
     }

@@ -1,7 +1,8 @@
 package com.andreabaccega.edittextformexample.utils;
 
-import com.andreabaccega.edittextformexample.LayoutExampleActivity;
 import android.content.Context;
+
+import com.andreabaccega.edittextformexample.LayoutExampleActivity;
 
 public class LayoutListItem extends ListItem {
 	private int layoutRes;

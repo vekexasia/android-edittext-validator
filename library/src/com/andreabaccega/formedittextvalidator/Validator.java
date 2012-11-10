@@ -19,10 +19,10 @@ public abstract class Validator {
 	 */
 	public abstract boolean isValid(EditText et);
 	
-	public boolean hasErrorMessage(EditText et){
+	public boolean hasErrorMessage(){
 		return errorMessage != null;
 	}
-	public String getErrorMessage(EditText et) {
+	public String getErrorMessage() {
 		return errorMessage;
 	}
 }
