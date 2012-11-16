@@ -229,3 +229,7 @@ With these binary operator validators you'll be able to perform as many differen
 # Author
 
 *  Andrea Baccega <me@andreabaccega.com> - _Author/Ideator of the library_
+
+# Contributors
+
+*  [ffrog8](https://github.com/ffrog8) - _Added the ability to use the library inside the preferences_
