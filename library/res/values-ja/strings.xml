@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="error_only_numeric_digits_allowed">数字のみ入力可能です。</string>
+	<string name="error_this_field_cannot_contain_special_character">特別な文字を含むことはできません。</string>
+	<string name="error_only_standard_letters_are_allowed">一般的なアルファベットのみ入力可能です。</string>
+	<string name="error_field_must_not_be_empty">入力必須です。</string>
+	<string name="error_email_address_not_valid">有効な電子メールアドレスではありません。</string>
+	<string name="error_creditcard_number_not_valid">有効なクレジットカード番号ではありません。</string>
+	<string name="error_phone_not_valid">有効な電話番号ではありません。</string>
+	<string name="error_domain_not_valid">有効なドメイン名ではありません。</string>
+	<string name="error_ip_not_valid">有効なIPアドレスではありません。</string>
+	<string name="error_url_not_valid">有効なURLではありません。</string>
+</resources>
