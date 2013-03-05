@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="error_only_numeric_digits_allowed">Inserire solamente numeri</string>
+	<string name="error_this_field_cannot_contain_special_character">Il campo non può contenere caratteri speciali</string>
+	<string name="error_only_standard_letters_are_allowed">Inserire solamente lettere</string>
+	<string name="error_field_must_not_be_empty">Il campo non può essere vuoto</string>
+	<string name="error_email_address_not_valid">L\'indirizzo email non è valido</string>
+	<string name="error_creditcard_number_not_valid">La carta di credito non è valida</string>
+	<string name="error_phone_not_valid">L\'indirizzo di telefono non è velido</string>
+	<string name="error_domain_not_valid">Il nome di dominio non è valido</string>
+	<string name="error_ip_not_valid">L\'ip non è valido</string>
+	<string name="error_url_not_valid">Il sito web non è valido</string>
+</resources>

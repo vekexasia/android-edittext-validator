@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="error_only_numeric_digits_allowed">Seuls les caractères numériques sont autorisés</string>
+	<string name="error_this_field_cannot_contain_special_character">Ce champ ne peut contenir de caractères spéciaux</string>
+	<string name="error_only_standard_letters_are_allowed">Seuls les caractères standards sont autorisés</string>
+	<string name="error_field_must_not_be_empty">Le champ ne doit pas être vide</string>
+	<string name="error_email_address_not_valid">Adresse email invalide</string>
+	<string name="error_creditcard_number_not_valid">Numéro de carte invalide</string>
+	<string name="error_phone_not_valid">Numéro de téléphone invalide</string>
+	<string name="error_domain_not_valid">Nom de domaine invalide</string>
+	<string name="error_ip_not_valid">Adresse IP invalide</string>
+	<string name="error_url_not_valid">Adresse url invalide</string>
+</resources>

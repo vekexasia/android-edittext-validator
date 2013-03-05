@@ -233,3 +233,4 @@ With these binary operator validators you'll be able to perform as many differen
 # Contributors
 
 *  [ffrog8](https://github.com/ffrog8) - _Added the ability to use the library inside the preferences_
+*  [indication](https://github.com/indication) - _Added japanese translations_
