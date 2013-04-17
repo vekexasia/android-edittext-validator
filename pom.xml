@@ -20,7 +20,7 @@
 
     <modules>
         <module>library</module>
-        <module>example</module>
+        <module>exampleproject</module>
     </modules>
 
     <properties>
