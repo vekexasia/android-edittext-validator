@@ -1,16 +1,18 @@
-# built application files
 *.apk
 *.ap_
-
-# files for the dex VM
 *.dex
-
-# Java class files
 *.class
-
-# generated files
+*.iml
+.gitignore~
+.idea/
+.DS_STORE
+.classpath
+.settings/
 bin/
 gen/
-
-# Local configuration file (sdk path, etc)
 local.properties
+target/
+classes/
+gen-external-apklibs/
+out/
+tmp/
