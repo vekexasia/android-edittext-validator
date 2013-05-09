@@ -70,4 +70,6 @@ public interface EditTextValidator {
 
 	final int TEST_PERSONFULLNAME = 13;
 
+	final int TEST_DATE = 14;
+
 }
