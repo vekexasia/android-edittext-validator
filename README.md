@@ -61,6 +61,8 @@ There are several values you can set to the test attribute:
 - **numeric**: for an only numeric field
 - **alpha**: for an alpha only field
 - **alphaNumeric**: guess what?
+- **personName**: checks if the entered text is a person first or last name.
+- **personFullName**: checks if the entered value is a complete full name.
 - **email**: checks that the field is a valid email
 - **creditCard**: checks that the field contains a valid credit card using [Luhn Algorithm](http://en.wikipedia.org/wiki/Luhn_algorithm)
 - **phone**: checks that the field contains a valid phone number
