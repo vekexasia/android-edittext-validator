@@ -1,4 +1,5 @@
 package com.andreabaccega.widget;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
@@ -10,6 +11,7 @@ import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.KeyEvent;
 import android.widget.EditText;
+
 import com.andreabaccega.formedittextvalidator.Validator;
 
 /**
