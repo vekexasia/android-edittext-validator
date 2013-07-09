@@ -1,7 +1,15 @@
 package com.andreabaccega.widget;
 
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+
 import android.content.Context;
+import android.graphics.Rect;
+import android.graphics.drawable.Drawable;
+import android.os.Build;
+import android.text.TextUtils;
 import android.util.AttributeSet;
+import android.view.KeyEvent;
 import android.widget.EditText;
 
 import com.andreabaccega.formedittextvalidator.Validator;
