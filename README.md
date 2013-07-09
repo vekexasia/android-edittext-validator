@@ -20,7 +20,7 @@ In your xml import an extra namespace on the root of your layout
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:whatever="http://schemas.android.com/apk/res/your.package.name"
+    xmlns:whatever="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" >
     ....
@@ -36,7 +36,7 @@ Whenever you need to use the FormEditText just do the following in your xml.
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:whatever="http://schemas.android.com/apk/res/your.package.name"
+    xmlns:whatever="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" >
 
@@ -80,7 +80,7 @@ You can customize them using the attributes
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:whatever="http://schemas.android.com/apk/res/your.package.name"
+    xmlns:whatever="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" >
 
@@ -111,7 +111,7 @@ If you want to use **regexp** as **test** attribute value you'll need to also us
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:whatever="http://schemas.android.com/apk/res/your.package.name"
+    xmlns:whatever="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" >
 
@@ -136,7 +136,7 @@ If you want to use **regexp** as **test** attribute value you'll need to also us
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:whatever="http://schemas.android.com/apk/res/your.package.name"
+    xmlns:whatever="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" >
 
