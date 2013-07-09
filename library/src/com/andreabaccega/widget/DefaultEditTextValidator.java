@@ -26,6 +26,8 @@ import com.andreabaccega.formedittextvalidator.PhoneValidator;
 import com.andreabaccega.formedittextvalidator.RegexpValidator;
 import com.andreabaccega.formedittextvalidator.Validator;
 import com.andreabaccega.formedittextvalidator.WebUrlValidator;
+import com.andreabaccega.formedittextvalidator.PersonNameValidator;
+import com.andreabaccega.formedittextvalidator.PersonFullNameValidator;
 
 /**
  * Default implementation of an {@link EditTextValidator}
@@ -184,6 +186,14 @@ public class DefaultEditTextValidator
 			case TEST_WEBURL:
 				toAdd =
 				    new WebUrlValidator( TextUtils.isEmpty( testErrorString ) ? context.getString( R.string.error_url_not_valid ) : testErrorString );
+				break;
+			case TEST_PERSONNAME:
+				toAdd =
+				    new PersonNameValidator( TextUtils.isEmpty( testErrorString ) ? context.getString( R.string.error_notvalid_personname ) : testErrorString );
+				break;
+			case TEST_PERSONFULLNAME:
+				toAdd =
+				    new PersonFullNameValidator( TextUtils.isEmpty( testErrorString ) ? context.getString( R.string.error_notvalid_personfullname ) : testErrorString );
 				break;
 
 			case TEST_CUSTOM:

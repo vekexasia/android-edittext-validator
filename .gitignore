@@ -11,6 +11,17 @@
 # generated files
 bin/
 gen/
+build/
+
+# intellij iml files
+*.iml
+
+# gradle and idea files and cache
+.gradle
+.idea
+
+#random stuff that dropped in my project probably cause of android studio
+library/build.xml
 
 # Local configuration file (sdk path, etc)
 local.properties

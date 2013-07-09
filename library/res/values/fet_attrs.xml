@@ -15,6 +15,8 @@
 			<enum name="webUrl" value="9" />
 			<enum name="nocheck" value="10" />
 			<enum name="custom" value="11" />
+			<enum name="personName" value="12" />
+			<enum name="personFullName" value="13" />
 		</attr>
 		<attr name="testErrorString" format="string" />
 		<attr name="emptyErrorString" format="string" />

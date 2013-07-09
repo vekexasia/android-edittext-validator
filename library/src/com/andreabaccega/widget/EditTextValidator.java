@@ -66,4 +66,8 @@ public interface EditTextValidator {
 
 	final int TEST_CUSTOM = 11;
 
+	final int TEST_PERSONNAME = 12;
+
+	final int TEST_PERSONFULLNAME = 13;
+
 }

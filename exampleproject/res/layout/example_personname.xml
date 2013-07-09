@@ -4,5 +4,4 @@
     android:id="@+id/et"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    editTextFormExample:testType="numeric" />
-<!-- Note: for a better user interaction you should use android:inputType. It was intentionally left back in this example. -->
+    editTextFormExample:testType="personName" />
