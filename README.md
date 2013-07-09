@@ -236,3 +236,4 @@ With these binary operator validators you'll be able to perform as many differen
 
 *  [ffrog8](https://github.com/ffrog8) - _Added the ability to use the library inside the preferences_
 *  [indication](https://github.com/indication) - _Added japanese translations_
+*  [renclav](https://github.com/renclav) - _Fixed weird bug affecting some 4.2+ devices that prevented the error icon to be shown_
