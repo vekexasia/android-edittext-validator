@@ -31,10 +31,10 @@ android {
 
 }
 
-/*apply plugin: 'maven'
+apply plugin: 'maven'
 apply plugin: 'signing'
 
-version = '1.0.2'
+version = '1.0.3'
 group = 'com.andreabaccega'
 
 configurations {
@@ -42,6 +42,7 @@ configurations {
         extendsFrom configurations.default
     }
 }
+
 
 signing {
     required { has("release") && gradle.taskGraph.hasTask("uploadArchives") }
@@ -62,6 +63,7 @@ uploadArchives {
         pom.project {
             name 'Android Form Edittext'
             packaging 'aar'
+            artifactId 'android-form-edittext'
             description 'An extension of EditText with data validation facilities'
             url 'https://github.com/vekexasia/android-form-edittext'
 
@@ -89,4 +91,4 @@ uploadArchives {
         }
     }
 }
-*/
+
