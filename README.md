@@ -12,6 +12,19 @@ Here some screenshot of the Example app ( and the library )
 
 The app source code is located under this repo!
 
+# How to include it
+
+This library can be found in maven central repo. If you're using Android studio you can include it by writing the following in the corresponding _dependencies_ block
+```groovy
+dependencies {
+	// ...
+	compile 'com.andreabaccega:android-form-edittext:1.0.3'
+	// ...
+}
+```
+
+
+
 # How to use
 
 
