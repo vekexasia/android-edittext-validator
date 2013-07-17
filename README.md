@@ -82,6 +82,7 @@ There are several values you can set to the test attribute:
 - **domainName**: checks that field contains a valid domain name ( always passes the test in API Level < 8 )
 - **ipAddress**: checks that the field contains a valid ip address
 - **webUrl**: checks that the field contains a valid url ( always passes the test in API Level < 8 )
+- **date**: checks that the field is a valid date/datetime format ( if customFormat is set, checks with customFormat )
 - **nocheck**: It does not check anything except the emptyness of the field.
 
 For most of the test type values this library comes with a couple of default strings. This means that error strings ( english only ) are already available for the following test types: numeric, alpha, alphanumeric

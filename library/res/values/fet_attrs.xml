@@ -17,10 +17,12 @@
 			<enum name="custom" value="11" />
 			<enum name="personName" value="12" />
 			<enum name="personFullName" value="13" />
+			<enum name="date" value="14" />
 		</attr>
 		<attr name="testErrorString" format="string" />
 		<attr name="emptyErrorString" format="string" />
 		<attr name="customRegexp" format="string" />
+		<attr name="customFormat" format="string" />
 		<attr name="emptyAllowed" format="boolean" />
 		<attr name="classType" format="string" />
 	</declare-styleable>
