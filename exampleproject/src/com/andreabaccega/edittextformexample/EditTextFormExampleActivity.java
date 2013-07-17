@@ -72,6 +72,8 @@ public class EditTextFormExampleActivity
             new LayoutListItem( "Alpha", R.layout.example_alpha, R.string.explanation_alpha ),
             new LayoutListItem( "Person Name", R.layout.example_personname, R.string.explanation_personname ),
             new LayoutListItem( "Person Full Name", R.layout.example_personfullname, R.string.explanation_personfullname ),
+            new LayoutListItem( "Date", R.layout.example_date, R.string.explanation_date ),
+            new LayoutListItem( "Date Custom Format", R.layout.example_date_custom, R.string.explanation_date_custom ),
             new LayoutListItem( "Numeric only", R.layout.example_numeric, R.string.explanation_numeric ),
             new LayoutListItem( "Email", R.layout.example_email, R.string.explanation_email ),
             new LayoutListItem( "Credit Card Number", R.layout.example_creditcard, R.string.explanation_creditcard ),

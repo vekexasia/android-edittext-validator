@@ -6,6 +6,13 @@
     <string name="explanation_alpha">The alpha field will check if the field contains only standard letters.</string>
     <string name="explanation_personname">This field will check for valid person name OR surname</string>
     <string name="explanation_personfullname">This field will check for valid person name AND surname</string>
+
+    <string name="hint_date"><![CDATA[2013-07-11 or 11:23]]></string>
+    <string name="explanation_date">This field will check date/datetime</string>
+
+    <string name="hint_date_custom"><![CDATA[2013-07-11]]></string>
+    <string name="explanation_date_custom">This field will check yyyy-MM-dd</string>
+
     <string name="hint_email">me@andreabaccega.com</string>
     <string name="explanation_email">The email field will only accept valid email input.\nNote that this will only perform a regular expression check</string>
     

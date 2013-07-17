@@ -1,0 +1,7 @@
+<com.andreabaccega.widget.FormEditText
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/et"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    editTextFormExample:testType="date" />
