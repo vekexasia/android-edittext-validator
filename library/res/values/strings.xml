@@ -12,4 +12,5 @@
 	<string name="error_url_not_valid">Web Url is not valid</string>
     <string name="error_notvalid_personname">Not a valid first or last name.</string>
     <string name="error_notvalid_personfullname">Not a valid full name.</string>
+    <string name="error_date_not_valid">Format not valid</string>
 </resources>

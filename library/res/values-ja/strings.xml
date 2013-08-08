@@ -10,4 +10,5 @@
 	<string name="error_domain_not_valid">有効なドメイン名ではありません。</string>
 	<string name="error_ip_not_valid">有効なIPアドレスではありません。</string>
 	<string name="error_url_not_valid">有効なURLではありません。</string>
+    <string name="error_date_not_valid">有効な形式ではありません。</string>
 </resources>

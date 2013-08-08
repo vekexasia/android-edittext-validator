@@ -13,6 +13,7 @@ import com.andreabaccega.formedittextvalidator.AlphaNumericValidator;
 import com.andreabaccega.formedittextvalidator.AlphaValidator;
 import com.andreabaccega.formedittextvalidator.AndValidator;
 import com.andreabaccega.formedittextvalidator.CreditCardValidator;
+import com.andreabaccega.formedittextvalidator.DateValidator;
 import com.andreabaccega.formedittextvalidator.DomainValidator;
 import com.andreabaccega.formedittextvalidator.DummyValidator;
 import com.andreabaccega.formedittextvalidator.EmailValidator;
@@ -45,6 +46,7 @@ public class DefaultEditTextValidator
 		classType = typedArray.getString( R.styleable.FormEditText_classType );
 		customRegexp = typedArray.getString( R.styleable.FormEditText_customRegexp );
 		emptyErrorString = typedArray.getString( R.styleable.FormEditText_emptyErrorString );
+	    customFormat = typedArray.getString(R.styleable.FormEditText_customFormat);
 		typedArray.recycle();
 
 		this.editText = editText;
@@ -235,6 +237,10 @@ public class DefaultEditTextValidator
 				}
 
 				break;
+
+			case TEST_DATE:
+				toAdd = new DateValidator( TextUtils.isEmpty( testErrorString ) ? context.getString( R.string.error_date_not_valid ) : testErrorString, customFormat);
+				break;
 		}
 
 		MultiValidator tmpValidator;
@@ -344,6 +350,8 @@ public class DefaultEditTextValidator
 	protected String classType;
 
 	protected String customRegexp;
+
+	protected String customFormat;
 
 	protected String emptyErrorStringActual;
 

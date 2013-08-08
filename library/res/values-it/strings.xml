@@ -12,4 +12,5 @@
 	<string name="error_url_not_valid">Il sito web non è valido</string>
     <string name="error_notvalid_personname">Il nome o cognome non è valido.</string>
     <string name="error_notvalid_personfullname">Il campo non contiene un nome completo valido.</string>
+    <string name="error_date_not_valid">Formato non valido</string>
 </resources>
