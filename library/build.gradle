@@ -4,7 +4,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.4.3'
+        classpath 'com.android.tools.build:gradle:0.5.+'
     }
 }
 apply plugin: 'android-library'
@@ -34,7 +34,7 @@ android {
 apply plugin: 'maven'
 apply plugin: 'signing'
 
-version = '1.0.3'
+version = '1.0.4'
 group = 'com.andreabaccega'
 
 configurations {

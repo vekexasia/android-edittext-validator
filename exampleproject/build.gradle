@@ -4,7 +4,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.4.3'
+        classpath 'com.android.tools.build:gradle:0.5.+'
     }
 }
 apply plugin: 'android'
@@ -30,7 +30,7 @@ android {
 
     signingConfigs {
         release {
-            storeFile file(chiaviBuchfile);
+            storeFile file(chiaviBuchFile);
             storePassword chiaviBuchstorePassword
             keyAlias chiaviBuchkeyAlias
             keyPassword chiaviBuchkeyPassword
