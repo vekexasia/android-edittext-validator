@@ -37,10 +37,20 @@ public interface EditTextValidator {
 	/**
 	 * Calling *testValidity()* will cause the EditText to go through
 	 * customValidators and call {@link #Validator.isValid(EditText)}
-	 * 
+	 * Same as {@link #testValidity(boolean)} with first parameter true
 	 * @return true if the validity passes false otherwise.
 	 */
 	public boolean testValidity();
+
+    /**
+     * Calling *testValidity()* will cause the EditText to go through
+     * customValidators and call {@link #Validator.isValid(EditText)}
+     * @param showUIError determines if this call should show the UI error.
+     * @return true if the validity passes false otherwise.
+     */
+    public boolean testValidity(boolean showUIError);
+
+    public void showUIError();
 
 	final int TEST_REGEXP = 0;
 
