@@ -49,7 +49,7 @@ public class DefaultEditTextValidator
 	    customFormat = typedArray.getString(R.styleable.FormEditText_customFormat);
 		typedArray.recycle();
 
-		this.editText = editText;
+		setEditText( editText );
 		resetValidators( context );
 
 	}
@@ -275,7 +275,9 @@ public class DefaultEditTextValidator
 
 	public void setEditText( EditText editText )
 	{
-		this.editText.removeTextChangedListener( getTextWatcher() );
+		if (this.editText != null) {
+			this.editText.removeTextChangedListener( getTextWatcher() );
+		}
 		this.editText = editText;
 		editText.addTextChangedListener( getTextWatcher() );
 	}
