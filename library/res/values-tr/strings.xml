@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="error_only_numeric_digits_allowed">Sadece sayı girebilirsiniz</string>
+	<string name="error_only_numeric_digits_range_allowed">Sadece %1$s - %2$s arasında sayı girebilirsiniz</string>
+	<string name="error_this_field_cannot_contain_special_character">Bu alana özel karakterler giremezsiniz</string>
+	<string name="error_only_standard_letters_are_allowed">Sadece harf girebilirsiniz</string>
+	<string name="error_field_must_not_be_empty">Bu alan boş olamaz</string>
+    <string name="error_email_address_not_valid">Eposta adresi geçersiz</string>
+    <string name="error_creditcard_number_not_valid">Kredi Kart numarası geçersiz</string>
+    <string name="error_phone_not_valid">Telefon numarası geçersiz</string>
+    <string name="error_domain_not_valid">Domain ismi geçersiz</string>
+	<string name="error_ip_not_valid">IP adresi geçersiz</string>
+	<string name="error_url_not_valid">Web adresi geçersiz</string>
+    <string name="error_notvalid_personname">Geçerli bir isim veya soyisim değil</string>
+    <string name="error_notvalid_personfullname">Geçerli bir isim değil</string>
+    <string name="error_date_not_valid">Tarih formatı geçersiz</string>
+</resources>
