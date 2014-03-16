@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 <string name="error_only_numeric_digits_allowed">Only numeric digits are allowed.</string>
+	<string name="error_only_numeric_digits_range_allowed">Only numeric digits within the range %1$s - %2$s are allowed.</string>
 	<string name="error_this_field_cannot_contain_special_character">This field cannot contain any special character</string>
 	<string name="error_only_standard_letters_are_allowed">Only standard letters are allowed</string>
 	<string name="error_field_must_not_be_empty">The field must not be empty</string>

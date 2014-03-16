@@ -21,6 +21,7 @@ import com.andreabaccega.formedittextvalidator.EmptyValidator;
 import com.andreabaccega.formedittextvalidator.IpAddressValidator;
 import com.andreabaccega.formedittextvalidator.MultiValidator;
 import com.andreabaccega.formedittextvalidator.NotValidator;
+import com.andreabaccega.formedittextvalidator.NumericRangeValidator;
 import com.andreabaccega.formedittextvalidator.NumericValidator;
 import com.andreabaccega.formedittextvalidator.OrValidator;
 import com.andreabaccega.formedittextvalidator.PhoneValidator;
@@ -47,6 +48,11 @@ public class DefaultEditTextValidator
 		customRegexp = typedArray.getString( R.styleable.FormEditText_customRegexp );
 		emptyErrorString = typedArray.getString( R.styleable.FormEditText_emptyErrorString );
 	    customFormat = typedArray.getString(R.styleable.FormEditText_customFormat);
+	    if(testType == TEST_NUMERIC_RANGE)
+	    {
+	    	minNumber = typedArray.getInt(R.styleable.FormEditText_minNumber, Integer.MIN_VALUE);
+	    	maxNumber = typedArray.getInt(R.styleable.FormEditText_maxNumber, Integer.MAX_VALUE);
+	    }
 		typedArray.recycle();
 
 		setEditText( editText );
@@ -157,6 +163,11 @@ public class DefaultEditTextValidator
 				toAdd =
 				    new NumericValidator( TextUtils.isEmpty( testErrorString ) ? context.getString( R.string.error_only_numeric_digits_allowed )
 				                    : testErrorString );
+				break;
+			case TEST_NUMERIC_RANGE:
+				toAdd =
+				    new NumericRangeValidator( TextUtils.isEmpty( testErrorString ) ? context.getString( R.string.error_only_numeric_digits_range_allowed, minNumber, maxNumber )
+				                    : testErrorString, minNumber, maxNumber);
 				break;
 			case TEST_REGEXP:
 
@@ -363,5 +374,9 @@ public class DefaultEditTextValidator
 	protected String emptyErrorStringActual;
 
 	protected String emptyErrorString;
+	
+	protected int minNumber;
+	
+	protected int maxNumber;
 
 }

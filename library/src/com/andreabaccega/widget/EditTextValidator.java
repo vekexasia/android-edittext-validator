@@ -81,5 +81,7 @@ public interface EditTextValidator {
 	final int TEST_PERSONFULLNAME = 13;
 
 	final int TEST_DATE = 14;
+	
+	final int TEST_NUMERIC_RANGE = 15;
 
 }
