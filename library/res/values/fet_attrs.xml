@@ -18,6 +18,7 @@
 			<enum name="personName" value="12" />
 			<enum name="personFullName" value="13" />
 			<enum name="date" value="14" />
+			<enum name="numericRange" value="15" />
 		</attr>
 		<attr name="testErrorString" format="string" />
 		<attr name="emptyErrorString" format="string" />
@@ -25,6 +26,8 @@
 		<attr name="customFormat" format="string" />
 		<attr name="emptyAllowed" format="boolean" />
 		<attr name="classType" format="string" />
+		<attr name="minNumber" format="integer" />
+		<attr name="maxNumber" format="integer" />
 	</declare-styleable>
 
 </resources>
