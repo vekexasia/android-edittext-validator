@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="error_only_numeric_digits_allowed">Допускаются только цифры.</string>
+	<string name="error_only_numeric_digits_range_allowed">Допускаются только цифры из разрешённого диапазона</string>
+	<string name="error_this_field_cannot_contain_special_character">Это поле не может содержать специальные символы</string>
+	<string name="error_only_standard_letters_are_allowed">Допускается только стандартный текст</string>
+	<string name="error_field_must_not_be_empty">Поле не может быть пустым</string>
+    <string name="error_email_address_not_valid">Email введён некорректно</string>
+    <string name="error_creditcard_number_not_valid">Номер кредитной карты введён некорректно</string>
+    <string name="error_phone_not_valid">Номер телефона введён некорректно</string>
+    <string name="error_domain_not_valid">Доменное имя некорректно</string>
+	<string name="error_ip_not_valid">IP-адрес введён некорректо</string>
+	<string name="error_url_not_valid">Интернет-адрес введён некорректно</string>
+    <string name="error_notvalid_personname">Некорректный ввод имени или фамилии.</string>
+    <string name="error_notvalid_personfullname">Некорректный ввод имени.</string>
+    <string name="error_date_not_valid">Неправильный формат ввода</string>
+</resources>
