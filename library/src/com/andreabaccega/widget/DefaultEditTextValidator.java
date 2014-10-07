@@ -37,6 +37,17 @@ import com.andreabaccega.formedittextvalidator.PersonFullNameValidator;
 public class DefaultEditTextValidator
     implements EditTextValidator
 {
+    /**
+     * support dynamic new DefaultEditTextValidator() ,used for Java call
+     * @param editText
+     * @param context
+     */
+    public DefaultEditTextValidator( EditText editText, Context context )
+    {
+        testType = EditTextValidator.TEST_NOCHECK;
+        setEditText( editText );
+        resetValidators( context );
+    }
 
 	public DefaultEditTextValidator( EditText editText, AttributeSet attrs, Context context )
 	{

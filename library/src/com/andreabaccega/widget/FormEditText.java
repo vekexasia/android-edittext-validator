@@ -23,7 +23,9 @@ public class FormEditText extends EditText {
     public FormEditText(Context context) {
         super(context);
         // FIXME how should this constructor be handled
-        throw new RuntimeException("Not supported");
+        //throw new RuntimeException("Not supported");
+	//support dynamic new FormEditText(context)
+	editTextValidator = new DefaultEditTextValidator(this, context);
     }
 
     public FormEditText(Context context, AttributeSet attrs) {
