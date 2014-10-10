@@ -19,7 +19,7 @@ This library can be found in maven central repo. If you're using Android studio 
 ```groovy
 dependencies {
 	// ...
-	compile 'com.andreabaccega:android-form-edittext:1.0.5@aar'
+	compile 'com.andreabaccega:android-form-edittext:1.1.0@aar'
 	// ...
 }
 ```

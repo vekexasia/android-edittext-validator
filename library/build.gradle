@@ -4,17 +4,17 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.6.+'
+        classpath 'com.android.tools.build:gradle:0.13.0'
     }
 }
-apply plugin: 'android-library'
+apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 19
-    buildToolsVersion '19'
+    compileSdkVersion 20
+    buildToolsVersion '20.0.0'
     defaultConfig {
         minSdkVersion 7
-        targetSdkVersion 19
+        targetSdkVersion 20
     }
     sourceSets {
         main {
@@ -30,65 +30,4 @@ android {
     }
 
 }
-
-apply plugin: 'maven'
-apply plugin: 'signing'
-
-version = '1.0.5'
-group = 'com.andreabaccega'
-
-configurations {
-    archives {
-        extendsFrom configurations.default
-    }
-}
-
-
-signing {
-    required { has("release") && gradle.taskGraph.hasTask("uploadArchives") }
-    sign configurations.archives
-}
-
-
-uploadArchives {
-    configuration = configurations.archives
-    repositories.mavenDeployer {
-        beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
-
-        repository(url: sonatypeRepo) {
-            authentication(userName: sonatypeUsername,
-                    password: sonatypePassword)
-        }
-
-        pom.project {
-            name 'Android Form Edittext'
-            packaging 'aar'
-            artifactId 'android-form-edittext'
-            description 'An extension of EditText with data validation facilities'
-            url 'https://github.com/vekexasia/android-form-edittext'
-
-            scm {
-                url 'scm:git@github.com:vekexasia/android-form-edittext.git'
-                connection 'scm:git@github.com:vekexasia/android-form-edittext.git'
-                developerConnection 'scm:git@github.com:vekexasia/android-form-edittext.git'
-            }
-
-            licenses {
-                license {
-                    name 'The MIT License (MIT)'
-                    url 'http://opensource.org/licenses/MIT'
-                    distribution 'repo'
-                }
-            }
-
-            developers {
-                developer {
-                    id 'vekexasia'
-                    name 'Andrea Baccega'
-                    email 'me@andreabaccega.com'
-                }
-            }
-        }
-    }
-}
-
+apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
