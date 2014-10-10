@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="error_only_numeric_digits_allowed">Només es permeten caràcters numèrics</string>
+	<string name="error_only_numeric_digits_range_allowed">Només es permeten els dígits en el rang %1$s - %2$s</string>
+	<string name="error_this_field_cannot_contain_special_character">Aquest camp pot contenir caràcters especials</string>
+	<string name="error_only_standard_letters_are_allowed">Només els caràcters estàndard són acceptats</string>
+	<string name="error_field_must_not_be_empty">Aquest camp és obligarori</string>
+	<string name="error_email_address_not_valid">Correu electrònic invàlid</string>
+	<string name="error_creditcard_number_not_valid">Número de targeta invàlid</string>
+	<string name="error_phone_not_valid">Número de telèfon invàlid</string>
+	<string name="error_domain_not_valid">Nom de domini invàlid</string>
+	<string name="error_ip_not_valid">IP invàlida</string>
+	<string name="error_url_not_valid">URL invàlida</string>
+	<string name="error_notvalid_personname">Nom o cognom inválids</string>
+        <string name="error_notvalid_personfullname">Nom complet invàlid</string>
+    <string name="error_date_not_valid">Format invàlid</string>
+</resources>
