@@ -13,6 +13,6 @@ public class EmptyValidator extends Validator {
 		super(message);
 	}
 	public boolean isValid(EditText et) {
-		return ! TextUtils.isEmpty(et.getText());
+		return TextUtils.getTrimmedLength(et.getText()) > 0;
 	}
 }
