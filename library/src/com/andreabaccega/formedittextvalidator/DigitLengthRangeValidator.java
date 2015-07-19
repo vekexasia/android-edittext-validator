@@ -1,6 +1,8 @@
 package com.andreabaccega.formedittextvalidator;
 
 
+import android.widget.EditText;
+
 /**
  * Digits Length Validator for number of allowed characters in string/numbers.
  * Range is [min;max[
@@ -19,7 +21,8 @@ public abstract class DigitLengthRangeValidator extends Validator {
   }
   
   public boolean isValid(EditText et) {
-    return et.getText().toString().length() >= min && et.getText().toString().length() < max;
+    int length = et.getText().toString().length();
+    return length >= min && length < max;
   }
 
 }

@@ -1,7 +1,7 @@
 <resources>
 
     <!-- ICS BROKE IT. http://code.google.com/p/android/issues/detail?id=22920 -->
-    <style name="TestApp.Light.NoTitleBar" parent="@android:style/Theme.Light.NoTitleBar">
+    <style name="TestApp.Light.NoTitleBar" parent="@style/Theme.AppCompat">
         <item name="android:textColorPrimaryInverse">@android:color/primary_text_light</item>
     </style>
 
