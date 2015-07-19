@@ -141,7 +141,7 @@ public class DefaultEditTextValidator
             try {
               TextInputLayout textInputLayout = (TextInputLayout) editText.getParent();
               textInputLayout.setErrorEnabled(false);
-            } catch (Exception e) {
+            } catch (Throwable e) {
               editText.setError(null);
             }
           }
@@ -338,7 +338,7 @@ public class DefaultEditTextValidator
         TextInputLayout parent = (TextInputLayout) editText.getParent();
         parent.setErrorEnabled(true);
         parent.setError(mValidator.getErrorMessage());
-      } catch (Exception e) {
+      } catch (Throwable e) {
         editText.setError(mValidator.getErrorMessage());
       }
     }
@@ -348,7 +348,7 @@ public class DefaultEditTextValidator
     try {
       TextInputLayout parent = (TextInputLayout) editText.getParent();
       return true; // might sound like a bug. but there's no way to know if the error is shown (not with public api)
-    } catch (Exception e) {
+    } catch (Throwable e) {
       return ! TextUtils.isEmpty(editText.getError());
     }
   }

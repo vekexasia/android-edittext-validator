@@ -19,7 +19,7 @@ This library can be found in maven central repo. If you're using Android studio 
 ```groovy
 dependencies {
 	// ...
-	compile 'com.andreabaccega:android-form-edittext:1.2.0@aar'
+	compile 'com.andreabaccega:android-form-edittext:1.2.1@aar'
 	// ...
 }
 ```
@@ -34,13 +34,13 @@ dependencies {
 		</dependency>
 ```
 
-Since 1.2.0 the library comes with a new optional dependency: [com.android.support.design](http://android-developers.blogspot.it/2015/05/android-design-support-library.html). This will enable the new [TextInputLayout](http://developer.android.com/reference/android/support/design/widget/TextInputLayout.html) features to be used with the validation engine.
-Version 1.2.0 depends on com.android.support.design:2.2.0 but if you're not using the support design library you can safely exclude it while including this with gradle by doing so:
+Since 1.2.+ the library comes with a new optional dependency: [com.android.support.design](http://android-developers.blogspot.it/2015/05/android-design-support-library.html). This will enable the new [TextInputLayout](http://developer.android.com/reference/android/support/design/widget/TextInputLayout.html) features to be used with the validation engine.
+Version 1.2.+ depends on com.android.support.design:2.2.0 but if you're not using the support design library you can safely exclude it while including this with gradle by doing so:
 
 ```groovy
 dependencies {
     // ..
-    compile ('com.andreabaccega:android-form-edittext:1.2.0@aar'){
+    compile ('com.andreabaccega:android-form-edittext:1.2.1@aar'){
         exclude module: 'design'
     }
     // ..
