@@ -4,7 +4,7 @@
 	<string name="error_only_numeric_digits_range_allowed">Sólo se permiten los dígitos en el rango %1$s - %2$s</string>
 	<string name="error_this_field_cannot_contain_special_character">Este campo puede contener caracteres especiales</string>
 	<string name="error_only_standard_letters_are_allowed">Solo los caracteres estándares son aceptados</string>
-	<string name="error_field_must_not_be_empty">Este campo es obligarorio</string>
+	<string name="error_field_must_not_be_empty">Este campo es obligatorio</string>
 	<string name="error_email_address_not_valid">Correo electrónico inválido</string>
 	<string name="error_creditcard_number_not_valid">Número de tarjeta inválido</string>
 	<string name="error_phone_not_valid">Número de teléfono inválido</string>
