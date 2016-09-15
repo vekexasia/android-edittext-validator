@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<declare-styleable name="FormEditText">
+		<attr name="testType">
+			<enum name="regexp" value="0" />
+			<enum name="numeric" value="1" />
+			<enum name="alpha" value="2" />
+			<enum name="alphaNumeric" value="3" />
+			<enum name="email" value="4" />
+			<enum name="creditCard" value="5" />
+			<enum name="phone" value="6" />
+			<enum name="domainName" value="7" />
+			<enum name="ipAddress" value="8" />
+			<enum name="webUrl" value="9" />
+			<enum name="nocheck" value="10" />
+			<enum name="custom" value="11" />
+			<enum name="personName" value="12" />
+			<enum name="personFullName" value="13" />
+			<enum name="date" value="14" />
+			<enum name="numericRange" value="15" />
+		</attr>
+		<attr name="testErrorString" format="string" />
+		<attr name="emptyErrorString" format="string" />
+		<attr name="customRegexp" format="string" />
+		<attr name="customFormat" format="string" />
+		<attr name="emptyAllowed" format="boolean" />
+		<attr name="classType" format="string" />
+		<attr name="minNumber" format="integer" />
+		<attr name="maxNumber" format="integer" />
+	</declare-styleable>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="error_only_numeric_digits_allowed">الرجاء إدخال الأرقام فقط</string>
+	<string name="error_only_numeric_digits_range_allowed">%2$s - %1$s الرجاء إدخال الأرقام بين </string>
+	<string name="error_this_field_cannot_contain_special_character">لا يمكن أن يحتوي هذا الحقل أي حرف خاص</string>
+	<string name="error_only_standard_letters_are_allowed">الرجاء إدخال الحروف الأبجدية  فقط</string>
+	<string name="error_field_must_not_be_empty">يجب ألا يكون حقل فارغ</string>
+    <string name="error_email_address_not_valid">عنوان البريد الإلكتروني غير صحيح</string>
+    <string name="error_creditcard_number_not_valid">رقم بطاقة الائتمان غير صحيح</string>
+    <string name="error_phone_not_valid">رقم الهاتف غير صحيح</string>
+    <string name="error_domain_not_valid">عنوان الموقع غير صحيح</string>
+	<string name="error_ip_not_valid">عنوان بروتوكول الإنترنت غير صحيح</string>
+	<string name="error_url_not_valid">رابط الأنترنات غير صحيح</string>
+    <string name="error_notvalid_personname">الإسم أو اللقب غير صحيح</string>
+    <string name="error_notvalid_personfullname">الإسم غير صحيح</string>
+    <string name="error_date_not_valid">صيغة غير صحيحة</string>
+</resources>
