@@ -1,4 +1,6 @@
 # Android Form EditText
+[![Release](https://jitpack.io/v/com.andreabaccega/android-edittext-validator.svg)](https://jitpack.io/#com.andreabaccega/android-edittext-validator)
+
 
 Android form edit text is an extension of EditText that brings data validation facilities to the edittext.
 
@@ -25,7 +27,7 @@ allprojects {
 }
 dependencies {
 	// ...
-	compile 'com.andreabaccega:android-form-edittext:1.2.1@aar'
+	compile 'com.andreabaccega:android-edittext-validator:1.3.0'
 	// ...
 }
 ```
@@ -39,8 +41,8 @@ dependencies {
 	    </repositories>
 		<dependency>
 			<groupId>com.andreabaccega</groupId>
-			<artifactId>android-form-edittext</artifactId>
-			<version>${com.andreabaccega.android-form-edittext-version}</version>
+			<artifactId>android-edittext-validator</artifactId>
+			<version>${...}</version>
 			<type>aar</type>
 			<scope>provided</scope>
 		</dependency>
