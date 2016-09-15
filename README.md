@@ -17,6 +17,12 @@ The app source code is located under this repo!
 This library can be found in maven central repo. If you're using Android studio you can include it by writing the following in the corresponding _dependencies_ block
 #### Gradle:
 ```groovy
+allprojects {
+    repositories {
+        ...
+        maven { url "https://jitpack.io" }
+    }
+}
 dependencies {
 	// ...
 	compile 'com.andreabaccega:android-form-edittext:1.2.1@aar'
@@ -25,6 +31,12 @@ dependencies {
 ```
 ####Maven
 ```xml
+        <repositories>
+		    <repository>
+		        <id>jitpack.io</id>
+		        <url>https://jitpack.io</url>
+		    </repository>
+	    </repositories>
 		<dependency>
 			<groupId>com.andreabaccega</groupId>
 			<artifactId>android-form-edittext</artifactId>
@@ -34,15 +46,13 @@ dependencies {
 		</dependency>
 ```
 
-Since 1.2.+ the library comes with a new optional dependency: [com.android.support.design](http://android-developers.blogspot.it/2015/05/android-design-support-library.html). This will enable the new [TextInputLayout](http://developer.android.com/reference/android/support/design/widget/TextInputLayout.html) features to be used with the validation engine.
-Version 1.2.+ depends on com.android.support.design:2.2.0 but if you're not using the support design library you can safely exclude it while including this with gradle by doing so:
+Since 1.3.+ the library comes with a new optional dependency: [com.android.support.design](http://android-developers.blogspot.it/2015/05/android-design-support-library.html). This will enable the new [TextInputLayout](http://developer.android.com/reference/android/support/design/widget/TextInputLayout.html) features to be used with the validation engine.
+Version 1.3.+ depends on com.android.support.design:2.2.0 but if you're not using the support design library you can safely exclude it while including this with gradle by doing so:
 
 ```groovy
 dependencies {
     // ..
-    compile ('com.andreabaccega:android-form-edittext:1.2.1@aar'){
-        exclude module: 'design'
-    }
+    compile ('com.andreabaccega:android-form-edittext:1.3.+')
     // ..
 }
 ```
@@ -96,15 +106,17 @@ There are several values you can set to the test attribute:
 - **numeric**: for an only numeric field
 - **alpha**: for an alpha only field
 - **alphaNumeric**: guess what?
-- **personName**: checks if the entered text is a person first or last name.
-- **personFullName**: checks if the entered value is a complete full name.
 - **email**: checks that the field is a valid email
 - **creditCard**: checks that the field contains a valid credit card using [Luhn Algorithm](http://en.wikipedia.org/wiki/Luhn_algorithm)
 - **phone**: checks that the field contains a valid phone number
-- **domainName**: checks that field contains a valid domain name ( always passes the test in API Level < 8 )
+- **domainName**: checks that field contains a valid domain name
 - **ipAddress**: checks that the field contains a valid ip address
-- **webUrl**: checks that the field contains a valid url ( always passes the test in API Level < 8 )
+- **webUrl**: checks that the field contains a valid url
+- **personName**: checks if the entered text is a person first or last name.
+- **personFullName**: checks if the entered value is a complete full name.
 - **date**: checks that the field is a valid date/datetime format ( if customFormat is set, checks with customFormat )
+- **numericRange**: checks that the field is a valid value between integers. (minNumber and maxNumber must be set)
+- **floatNumericRange**: checks that the field is a valid value between integers (but decimal values are allowed). (minNumber and maxNumber must be set)
 - **nocheck**: It does not check anything except the emptyness of the field.
 
 For most of the test type values this library comes with a couple of default strings. This means that error strings ( english only ) are already available for the following test types: numeric, alpha, alphanumeric

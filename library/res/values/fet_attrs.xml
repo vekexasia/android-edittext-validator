@@ -19,6 +19,7 @@
 			<enum name="personFullName" value="13" />
 			<enum name="date" value="14" />
 			<enum name="numericRange" value="15" />
+			<enum name="floatNumericRange" value="16" />
 		</attr>
 		<attr name="testErrorString" format="string" />
 		<attr name="emptyErrorString" format="string" />
