@@ -20,20 +20,6 @@ android {
         compile project(':library')
     }
 
-    signingConfigs {
-        release {
-            storeFile file(chiaviBuchFile);
-            storePassword chiaviBuchstorePassword
-            keyAlias chiaviBuchkeyAlias
-            keyPassword chiaviBuchkeyPassword
-        }
-    }
-
-    buildTypes.release {
-        signingConfig signingConfigs.release
-    }
-
-
 }
 
 dependencies {
