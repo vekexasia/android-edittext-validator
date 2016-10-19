@@ -2,7 +2,7 @@
 <resources>
     <string name="error_only_numeric_digits_allowed">Somente dígitos numéricos são permitidos.</string>
     <string name="error_only_numeric_digits_range_allowed">Somente dígitos numéricos dentro da faixa %1$s - %2$s são permitidos.</string>
-    <string name="error_this_field_cannot_contain_special_character">This field cannot contain any special character</string>
+    <string name="error_this_field_cannot_contain_special_character">Este campo não pode conter nenhum caractere especial.</string>
     <string name="error_only_standard_letters_are_allowed">Somente letras padrão são permitidas.</string>
     <string name="error_field_must_not_be_empty">O campo não deve estar vazio</string>
     <string name="error_email_address_not_valid">Endereço de e-mail inválido.</string>
