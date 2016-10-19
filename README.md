@@ -69,7 +69,8 @@ In your xml import an extra namespace on the root of your layout
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:whatever="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content" >
+    android:layout_height="wrap_content" 
+    android:orientation="vertical">
     ....
     <!-- Your actual layout -->
     ....
@@ -85,7 +86,8 @@ Whenever you need to use the FormEditText just do the following in your xml.
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:whatever="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content" >
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <!-- Some stuff -->
 
@@ -134,7 +136,8 @@ You can customize them using the attributes
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:whatever="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content" >
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <!-- Some stuff -->
 
@@ -190,7 +193,8 @@ If you want to use **regexp** as **test** attribute value you'll need to also us
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:whatever="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content" >
+    android:layout_height="wrap_content" 
+    android:orientation="vertical">
 
     <!-- Some stuff -->
 
