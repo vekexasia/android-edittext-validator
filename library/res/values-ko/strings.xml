@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_only_numeric_digits_allowed">숫자만 입력가능합니다.</string>
+    <string name="error_only_numeric_digits_range_allowed">이 범위(%1s - %2s)안에 해당하는 숫자만 입력가능합니다.</string> 
+    <string name="error_this_field_cannot_contain_special_character">특수문자를 입력할 수 없습니다.</string> 
+    <string name="error_only_standard_letters_are_allowed">표준문자만 입력 가능합니다.</string>
+    <string name="error_field_must_not_be_empty">필수 입력 항목입니다.</string> 
+    <string name="error_email_address_not_valid">이메일 주소 형식이 맞지 않습니다.</string> 
+    <string name="error_creditcard_number_not_valid">유효한 카드번호가 아닙니다.</string> 
+    <string name="error_phone_not_valid">유효한 핸드폰번호가 아닙니다.</string>
+    <string name="error_domain_not_valid">유효한 도메인 이름이 아닙니다.</string> 
+    <string name="error_ip_not_valid">유효한 IP Address가 아닙니다.</string> 
+    <string name="error_url_not_valid">유효한 Web Url이 아닙니다.</string>
+    <string name="error_notvalid_personfullname">유효하지 않은 이름입니다..</string>
+    <string name="error_date_not_valid">날짜형식이 맞지 않습니다.</string>
+</resources>
