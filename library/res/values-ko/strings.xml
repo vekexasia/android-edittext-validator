@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="error_only_numeric_digits_allowed">숫자만 입력가능합니다.</string>
-    <string name="error_only_numeric_digits_range_allowed">이 범위(%1s - %2s)안에 해당하는 숫자만 입력가능합니다.</string> 
+    <string name="error_only_numeric_digits_range_allowed">이 범위(%1$s - %2$s)안에 해당하는 숫자만 입력가능합니다.</string> 
     <string name="error_this_field_cannot_contain_special_character">특수문자를 입력할 수 없습니다.</string> 
     <string name="error_only_standard_letters_are_allowed">표준문자만 입력 가능합니다.</string>
     <string name="error_field_must_not_be_empty">필수 입력 항목입니다.</string> 
