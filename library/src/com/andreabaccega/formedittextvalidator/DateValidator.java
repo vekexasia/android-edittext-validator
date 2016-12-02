@@ -1,13 +1,13 @@
 package com.andreabaccega.formedittextvalidator;
 
+import android.annotation.SuppressLint;
+import android.text.TextUtils;
+import android.widget.EditText;
+
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
-import android.annotation.SuppressLint;
-import android.text.TextUtils;
-import android.widget.EditText;
 
 
 public class DateValidator extends Validator {

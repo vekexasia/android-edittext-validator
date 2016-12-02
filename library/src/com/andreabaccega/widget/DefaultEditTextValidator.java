@@ -10,7 +10,28 @@ import android.util.AttributeSet;
 import android.widget.EditText;
 
 import com.andreabaccega.formedittext.R;
-import com.andreabaccega.formedittextvalidator.*;
+import com.andreabaccega.formedittextvalidator.AlphaNumericValidator;
+import com.andreabaccega.formedittextvalidator.AlphaValidator;
+import com.andreabaccega.formedittextvalidator.AndValidator;
+import com.andreabaccega.formedittextvalidator.CreditCardValidator;
+import com.andreabaccega.formedittextvalidator.DateValidator;
+import com.andreabaccega.formedittextvalidator.DomainValidator;
+import com.andreabaccega.formedittextvalidator.DummyValidator;
+import com.andreabaccega.formedittextvalidator.EmailValidator;
+import com.andreabaccega.formedittextvalidator.EmptyValidator;
+import com.andreabaccega.formedittextvalidator.FloatNumericRangeValidator;
+import com.andreabaccega.formedittextvalidator.IpAddressValidator;
+import com.andreabaccega.formedittextvalidator.MultiValidator;
+import com.andreabaccega.formedittextvalidator.NotValidator;
+import com.andreabaccega.formedittextvalidator.NumericRangeValidator;
+import com.andreabaccega.formedittextvalidator.NumericValidator;
+import com.andreabaccega.formedittextvalidator.OrValidator;
+import com.andreabaccega.formedittextvalidator.PersonFullNameValidator;
+import com.andreabaccega.formedittextvalidator.PersonNameValidator;
+import com.andreabaccega.formedittextvalidator.PhoneValidator;
+import com.andreabaccega.formedittextvalidator.RegexpValidator;
+import com.andreabaccega.formedittextvalidator.Validator;
+import com.andreabaccega.formedittextvalidator.WebUrlValidator;
 
 /**
  * Default implementation of an {@link EditTextValidator}

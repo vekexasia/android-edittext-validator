@@ -1,8 +1,8 @@
 package com.andreabaccega.formedittextvalidator;
 
-import java.util.regex.Pattern;
-
 import android.widget.EditText;
+
+import java.util.regex.Pattern;
 
 /**
  * Base class for regexp based validators.
