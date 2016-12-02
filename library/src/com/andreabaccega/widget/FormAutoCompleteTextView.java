@@ -41,8 +41,7 @@ public class FormAutoCompleteTextView extends AutoCompleteTextView {
      * queue of the current validators.
      *
      * @param theValidator
-     * @throws IllegalArgumentException
-     *             if the validator is null
+     * @throws IllegalArgumentException if the validator is null
      */
     public void addValidator(com.andreabaccega.formedittextvalidator.Validator theValidator) throws IllegalArgumentException {
         editTextValidator.addValidator(theValidator);

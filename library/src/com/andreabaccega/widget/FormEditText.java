@@ -42,8 +42,7 @@ public class FormEditText extends EditText {
      * queue of the current validators.
      *
      * @param theValidator
-     * @throws IllegalArgumentException
-     *             if the validator is null
+     * @throws IllegalArgumentException if the validator is null
      */
     public void addValidator(Validator theValidator) throws IllegalArgumentException {
         editTextValidator.addValidator(theValidator);
