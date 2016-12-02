@@ -1,5 +1,4 @@
-<com.andreabaccega.widget.FormEditText
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.andreabaccega.widget.FormEditText xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
     android:id="@+id/et"
     style="@android:style/Widget.EditText"
