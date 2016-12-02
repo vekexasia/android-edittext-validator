@@ -1,8 +1,5 @@
 package com.andreabaccega.widget;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-
 import android.content.Context;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
@@ -13,6 +10,9 @@ import android.view.KeyEvent;
 import android.widget.EditText;
 
 import com.andreabaccega.formedittextvalidator.Validator;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 
 /**
  * EditText Extension to be used in order to create forms in android.
@@ -42,8 +42,7 @@ public class FormEditText extends EditText {
      * queue of the current validators.
      *
      * @param theValidator
-     * @throws IllegalArgumentException
-     *             if the validator is null
+     * @throws IllegalArgumentException if the validator is null
      */
     public void addValidator(Validator theValidator) throws IllegalArgumentException {
         editTextValidator.addValidator(theValidator);

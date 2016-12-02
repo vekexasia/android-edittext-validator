@@ -1,8 +1,5 @@
 package com.andreabaccega.widget;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-
 import android.content.Context;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
@@ -12,6 +9,9 @@ import android.util.AttributeSet;
 import android.view.KeyEvent;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 
 /**
  * AutoCompleteTextView Extension to be used in order to create forms in android.
@@ -41,8 +41,7 @@ public class FormAutoCompleteTextView extends AutoCompleteTextView {
      * queue of the current validators.
      *
      * @param theValidator
-     * @throws IllegalArgumentException
-     *             if the validator is null
+     * @throws IllegalArgumentException if the validator is null
      */
     public void addValidator(com.andreabaccega.formedittextvalidator.Validator theValidator) throws IllegalArgumentException {
         editTextValidator.addValidator(theValidator);
