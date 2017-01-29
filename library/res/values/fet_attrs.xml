@@ -29,6 +29,8 @@
         <attr name="classType" format="string" />
         <attr name="minNumber" format="integer" />
         <attr name="maxNumber" format="integer" />
+        <attr name="floatminNumber" format="float" />
+        <attr name="floatmaxNumber" format="float" />
     </declare-styleable>
 
 </resources>

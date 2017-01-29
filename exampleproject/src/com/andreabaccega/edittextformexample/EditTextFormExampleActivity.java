@@ -28,6 +28,7 @@ public class EditTextFormExampleActivity
             new LayoutListItem("Date", R.layout.example_date, R.string.explanation_date),
             new LayoutListItem("Date Custom Format", R.layout.example_date_custom, R.string.explanation_date_custom),
             new LayoutListItem("Numeric only", R.layout.example_numeric, R.string.explanation_numeric),
+            new LayoutListItem("Float Numeric Range", R.layout.example_floatnumericrange, R.string.floatnumericrange),
             new LayoutListItem("Email", R.layout.example_email, R.string.explanation_email),
             new LayoutListItem("Credit Card Number", R.layout.example_creditcard, R.string.explanation_creditcard),
             new LayoutListItem("Phone", R.layout.example_phone, R.string.explanation_phone),

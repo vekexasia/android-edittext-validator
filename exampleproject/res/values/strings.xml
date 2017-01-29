@@ -66,5 +66,6 @@
     <string name="required_phoneno_message">A contact number is required</string>
     <string name="required_fullname_message">A full name is required</string>
     <string name="invalid_email_message">Provided e-mail address is invalid</string>
+    <string name="floatnumericrange">The numeric field allows only numbers on it. The previous edittext was intentionally configured to accept any kind of input so that you can test the validation.</string>
 
 </resources>

@@ -10,18 +10,18 @@ import android.widget.EditText;
  */
 public class FloatNumericRangeValidator extends Validator {
 
-    private int min, max;
+    private float floatmin, floatmax;
 
-    public FloatNumericRangeValidator(String _customErrorMessage, int min, int max) {
+    public FloatNumericRangeValidator(String _customErrorMessage, float floatmin, float floatmax) {
         super(_customErrorMessage);
-        this.min = min;
-        this.max = max;
+        this.floatmin = floatmin;
+        this.floatmax = floatmax;
     }
 
     public boolean isValid(EditText et) {
         try {
-            double value = Double.parseDouble(et.getText().toString());
-            return value >= min && value <= max;
+            float value = Float.parseFloat(et.getText().toString());
+            return value >= floatmin && value <= floatmax;
         } catch (NumberFormatException e) {
             return false;
         }

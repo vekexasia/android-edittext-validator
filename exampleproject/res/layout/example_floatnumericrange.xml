@@ -1,0 +1,8 @@
+<com.andreabaccega.widget.FormEditText xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/et"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    editTextFormExample:testType="floatNumericRange"
+    editTextFormExample:floatminNumber="0.1"
+    editTextFormExample:floatmaxNumber="1.0"/><!-- Note: for a better user interaction you should use android:inputType. It was intentionally left back in this example. -->
