@@ -27,7 +27,7 @@ allprojects {
 }
 dependencies {
 	// ...
-	compile 'com.andreabaccega:android-edittext-validator:1.3.0'
+	compile 'com.andreabaccega:android-edittext-validator:1.3.4'
 	// ...
 }
 ```
