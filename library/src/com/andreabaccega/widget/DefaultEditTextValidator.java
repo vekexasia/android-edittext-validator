@@ -53,6 +53,8 @@ public class DefaultEditTextValidator
     protected String emptyErrorString;
     protected int minNumber;
     protected int maxNumber;
+    protected float floatminNumber;
+    protected float floatmaxNumber;
     private TextWatcher tw;
     private String defaultEmptyErrorString;
 
@@ -77,9 +79,13 @@ public class DefaultEditTextValidator
         customRegexp = typedArray.getString(R.styleable.FormEditText_customRegexp);
         emptyErrorString = typedArray.getString(R.styleable.FormEditText_emptyErrorString);
         customFormat = typedArray.getString(R.styleable.FormEditText_customFormat);
-        if (testType == TEST_NUMERIC_RANGE || testType == TEST_FLOAT_NUMERIC_RANGE) {
+        if (testType == TEST_NUMERIC_RANGE) {
             minNumber = typedArray.getInt(R.styleable.FormEditText_minNumber, Integer.MIN_VALUE);
             maxNumber = typedArray.getInt(R.styleable.FormEditText_maxNumber, Integer.MAX_VALUE);
+        }
+        if (testType == TEST_FLOAT_NUMERIC_RANGE) {
+            floatminNumber = typedArray.getFloat(R.styleable.FormEditText_floatminNumber, Float.MIN_VALUE);
+            floatmaxNumber = typedArray.getFloat(R.styleable.FormEditText_floatmaxNumber, Float.MAX_VALUE);
         }
         typedArray.recycle();
 
@@ -196,8 +202,8 @@ public class DefaultEditTextValidator
                 break;
             case TEST_FLOAT_NUMERIC_RANGE:
                 toAdd =
-                        new FloatNumericRangeValidator(TextUtils.isEmpty(testErrorString) ? context.getString(R.string.error_only_numeric_digits_range_allowed, minNumber, maxNumber)
-                                : testErrorString, minNumber, maxNumber);
+                        new FloatNumericRangeValidator(TextUtils.isEmpty(testErrorString) ? context.getString(R.string.error_only_numeric_digits_range_allowed, floatminNumber, floatmaxNumber)
+                                : testErrorString, floatminNumber, floatmaxNumber);
                 break;
             case TEST_REGEXP:
 
