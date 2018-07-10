@@ -27,7 +27,7 @@ allprojects {
 }
 dependencies {
 	// ...
-	compile 'com.andreabaccega:android-edittext-validator:1.3.4'
+	compile 'com.andreabaccega:android-edittext-validator:1.3.5'
 	// ...
 }
 ```
@@ -54,7 +54,7 @@ Version 1.3.+ depends on com.android.support.design:2.2.0 but if you're not usin
 ```groovy
 dependencies {
     // ..
-    compile ('com.andreabaccega:android-form-edittext:1.3.+')
+    implementation 'com.andreabaccega:android-form-edittext:1.3.5'
     // ..
 }
 ```
