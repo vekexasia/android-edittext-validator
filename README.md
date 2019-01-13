@@ -239,7 +239,7 @@ Furthermore *testValidity()* will also place an exclamation mark on the right of
 
 
 ## Add your custom validators
-You can add your custom validators runtime through the *addValidator* method. For example, let's suppouse we want to add a validator that checks that the text input is equal to the string "ciao":
+You can add your custom validators runtime through the *addValidator* method. For example, let's suppose we want to add a validator that checks that the text input is equal to the string "ciao":
 ```java
 public class CiaoValidator extends Validator {
 
