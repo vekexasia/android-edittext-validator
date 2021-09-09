@@ -14,13 +14,13 @@ import java.util.regex.Pattern;
 public class EmailValidator extends PatternValidator {
     public EmailValidator(String _customErrorMessage) {
         super(_customErrorMessage, Build.VERSION.SDK_INT >= 8 ? Patterns.EMAIL_ADDRESS : Pattern.compile(
-                "[a-zA-Z0-9\\+\\.\\_\\%\\-\\+]{1,256}" +
-                        "\\@" +
-                        "[a-zA-Z0-9][a-zA-Z0-9\\-]{0,64}" +
-                        "(" +
-                        "\\." +
-                        "[a-zA-Z0-9][a-zA-Z0-9\\-]{0,25}" +
-                        ")+"
+            "[a-zA-Z0-9\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF\\+\\.\\_\\%\\-\\+]{1,256}" +
+            "\\@" +
+            "[a-zA-Z0-9\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-zA-Z0-9\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF\\-]{0,64}" +
+            "(" +
+            "\\." +
+            "[a-zA-Z0-9\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-zA-Z0-9\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF\\-]{0,25}" +
+            ")+"
         ));
     }
 }
